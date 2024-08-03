@@ -16,6 +16,7 @@ use App\Smark\Math;
 use App\Smark\Payment;
 use App\Smark\PDFer;
 use App\Smark\Stringer;
+use App\Smark\Web;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -39,6 +40,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(Encryption::class, function ($app) { return Encryption::class; });
         $this->app->singleton(Stringer::class, function ($app) { return Stringer::class; });
         $this->app->singleton(Arrayer::class, function ($app) { return Arrayer::class; });
+        $this->app->singleton(Web::class, function ($app) { return Web::class; });
     }
 
     /**

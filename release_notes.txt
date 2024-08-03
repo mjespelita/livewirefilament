@@ -129,3 +129,5 @@ Stringer::sanitizeInput()
 
 Arrayer::flattenArray()
 Arrayer::uniqueMultidimensionalArray()
+
+Web::scrapeWebpage()
