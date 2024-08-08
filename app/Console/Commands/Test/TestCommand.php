@@ -7,6 +7,7 @@ use App\Smark\Arrayer;
 use App\Smark\Web;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
+use Smark\Smark\Math;
 
 class TestCommand extends Command
 {
@@ -35,6 +36,6 @@ class TestCommand extends Command
         //     $this->info($value);
         // }
 
-        $this->info(Web::htmlToPlainText('https://laravel.com/'));
+        $this->info(Math::compute('add', [3,3,4]));
     }
 }
